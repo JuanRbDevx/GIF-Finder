@@ -1,0 +1,7 @@
+<header>
+    <!-- Solo muestra HeaderAuthComponent si el usuario está logueado -->
+    <app-header-auth *ngIf="isLogged" [isLogged]="isLogged"></app-header-auth>
+
+    <!-- Solo muestra HeaderGuestComponent si el usuario no está logueado -->
+    <app-header-guest *ngIf="!isLogged" [isLogged]="isLogged"></app-header-guest>
+</header>

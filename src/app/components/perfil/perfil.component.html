@@ -1,0 +1,31 @@
+<div class="profile-container">
+    <div class="profile-header">
+        <img src="https://via.placeholder.com/150" alt="Foto de perfil" class="profile-img">
+        <div class="profile-info">
+            <h2>{{ user.name || 'Sin nombre' }}</h2>
+            <p class="username">{{ user.username || 'Sin username' }}</p>
+            <p class="email">{{ user.email || 'Sin correo' }}</p>
+        </div>
+        <div class="actions-header">
+            <button class="btn-edit">Editar Perfil</button>
+        </div>
+    </div>
+
+    <div class="bio-section">
+        <h3>Acerca de mí</h3>
+        <p class="bio-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at dui et purus sollicitudin auctor. Proin sit amet justo ut velit faucibus malesuada. Nulla facilisi.</p>
+    </div>
+
+    <div class="actions">
+        <button class="btn-logout" (click)="closeSesion()">Cerrar Sesión</button>
+        <button class="btn-delete" (click)="onDeleteUser()">Eliminar Cuenta</button>
+        <button class="btn-recover" >Recuperar Contraseña</button>
+    </div>
+    
+    <div class="settings-section">
+        <h3>Configuraciones</h3>
+        <button class="btn-settings">Configuración de Privacidad</button>
+        <button class="btn-settings">Cambiar Contraseña</button>
+        <button class="btn-settings">Notificaciones</button>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<app-buscar></app-buscar>
+
+<div class="container">
+
+    <h2>TENDENCIA</h2>
+
+    <div class="gif-container" *ngIf="gifs.length > 0; else noData">
+        <div class="gif" *ngFor="let gif of gifs">
+            <img [src]="gif.images.fixed_height.url" [alt]="gif.title" />
+            <p>{{gif.title}}</p>
+        </div>
+    </div>
+
+    <ng-template #noData>
+        <p>No GIFs to display.</p>
+    </ng-template>
+
+</div>
+
+<app-footer></app-footer>

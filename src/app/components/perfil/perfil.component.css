@@ -1,0 +1,187 @@
+/* Contenedor principal del perfil */
+.profile-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Cabecera del perfil */
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+/* Foto de perfil */
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 3px solid #f5f5f7;
+    /* Borde suave similar a Apple */
+}
+
+/* Información del perfil */
+.profile-info {
+    flex: 1;
+}
+
+/* Nombre de usuario */
+.profile-info h2 {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Username */
+.username {
+    font-size: 1.1rem;
+    color: #007aff;
+    /* Azul similar al de Apple */
+    font-weight: 500;
+}
+
+/* Correo electrónico */
+.email {
+    font-size: 1rem;
+    color: #666;
+    font-weight: 400;
+}
+
+/* Botón de editar perfil */
+.actions-header .btn-edit {
+    padding: 10px 20px;
+    background-color: #34c759;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo del botón de editar al pasar el cursor por encima */
+.actions-header .btn-edit:hover {
+    background-color: #28a745;
+}
+
+/* Sección de biografía */
+.bio-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f5f5f7;
+    border-radius: 10px;
+}
+
+.bio-section h3 {
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.bio-section p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Botones de acción */
+.actions {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+/* Estilo de los botones de Cerrar sesión y Eliminar Cuenta */
+.btn-logout,
+.btn-delete,
+.btn-recover {
+    width: 32%;
+    padding: 12px;
+    background-color: #007aff;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+/* Estilo al pasar el cursor por encima de los botones */
+.btn-logout:hover,
+.btn-delete:hover,
+.btn-recover:hover {
+    background-color: #0051a8;
+}
+
+/* Estilo del botón de Eliminar Cuenta */
+.btn-delete {
+    background-color: #ff3b30;
+}
+
+.btn-delete:hover {
+    background-color: #ff2d2d;
+}
+
+/* Estilo del botón de Recuperar Contraseña */
+.btn-recover {
+    background-color: #ffcc00;
+}
+
+.btn-recover:hover {
+    background-color: #e6b800;
+}
+
+/* Configuración de Privacidad y Notificaciones */
+.settings-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f5f5f7;
+    border-radius: 10px;
+}
+
+.settings-section h3 {
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.settings-section .btn-settings {
+    width: 100%;
+    padding: 12px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 10px;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Estilo al pasar el cursor por encima de los botones de configuración */
+.settings-section .btn-settings:hover {
+    background-color: #bbb;
+}
+
+/* Texto deshabilitado en los botones */
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
