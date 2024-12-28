@@ -3,14 +3,12 @@ import { Component } from '@angular/core';
 import { TendenciaService } from '../../service/tendencia.service';
 import { HeaderComponent } from "../header/header.component";
 import { BuscarComponent } from "../buscar/buscar.component";
-import { FooterComponent } from "../footer/footer.component";
 
 @Component({
   selector: 'app-home',
   imports: [
     CommonModule,
     BuscarComponent,
-    FooterComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
